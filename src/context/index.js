@@ -21,7 +21,7 @@ const metadata = {
 export const modal = createAppKit({
   adapters: [wagmiAdapter],
   projectId,
-  networks: [bscTestnet, bsc],
+  networks: [bscTestnet],
   defaultNetwork: bscTestnet,
   metadata,
   features: {
