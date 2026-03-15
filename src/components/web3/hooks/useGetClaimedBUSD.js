@@ -8,7 +8,7 @@ export function useGetClaimedBUSD() {
   return useReadContract({
     address: flexContracts.auctions,
     abi: DAILY_AUCTIONS_ABI,
-    functionName: 'claimedBUSD',
+    functionName: 'claimedUSDT',
     args: address ? [address] : undefined,
     query: {
       enabled: Boolean(address),

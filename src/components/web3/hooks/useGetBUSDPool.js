@@ -7,6 +7,6 @@ export function useGetBUSDPool() {
   return useReadContract({
     address: flexContracts.auctions,
     abi: DAILY_AUCTIONS_ABI,
-    functionName: 'BUSDPOOL',
+    functionName: 'USDTPOOL',
   });
 }

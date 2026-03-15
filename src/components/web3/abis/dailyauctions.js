@@ -62,7 +62,7 @@ export const DAILY_AUCTIONS_ABI = [
 				"type": "uint256"
 			}
 		],
-		"name": "ClaimedBusdFromBPD",
+		"name": "ClaimedUSDTFromBPD",
 		"type": "event"
 	},
 	{
@@ -153,7 +153,7 @@ export const DAILY_AUCTIONS_ABI = [
 		"name": "DistributedBigPayDay",
 		"type": "event"
 	},
-	{
+	{ 
 		"anonymous": false,
 		"inputs": [
 			{
@@ -209,7 +209,7 @@ export const DAILY_AUCTIONS_ABI = [
 			{
 				"indexed": false,
 				"internalType": "uint256",
-				"name": "busdAmount",
+				"name": "usdtAmount",
 				"type": "uint256"
 			},
 			{
@@ -298,7 +298,7 @@ export const DAILY_AUCTIONS_ABI = [
 	},
 	{
 		"inputs": [],
-		"name": "BUSDPOOL",
+		"name": "USDTPOOL",
 		"outputs": [
 			{
 				"internalType": "uint256",
@@ -311,7 +311,7 @@ export const DAILY_AUCTIONS_ABI = [
 	},
 	{
 		"inputs": [],
-		"name": "BUSD_TOKEN",
+		"name": "USDT_TOKEN",
 		"outputs": [
 			{
 				"internalType": "contract IBEP20",
@@ -524,7 +524,7 @@ export const DAILY_AUCTIONS_ABI = [
 	},
 	{
 		"inputs": [],
-		"name": "claimBusdFromBPD",
+		"name": "claimUSDTFromBPD",
 		"outputs": [
 			{
 				"internalType": "uint256",
@@ -575,7 +575,7 @@ export const DAILY_AUCTIONS_ABI = [
 				"type": "address"
 			}
 		],
-		"name": "claimedBUSD",
+		"name": "claimedUSDT",
 		"outputs": [
 			{
 				"internalType": "uint256",
@@ -654,7 +654,7 @@ export const DAILY_AUCTIONS_ABI = [
 		"inputs": [
 			{
 				"internalType": "uint256",
-				"name": "_busd_amount",
+				"name": "_usdt_amount",
 				"type": "uint256"
 			}
 		],
@@ -784,7 +784,7 @@ export const DAILY_AUCTIONS_ABI = [
 			},
 			{
 				"internalType": "uint256",
-				"name": "totalDonatedBUSD",
+				"name": "totalDonatedUSDT",
 				"type": "uint256"
 			},
 			{
@@ -799,7 +799,7 @@ export const DAILY_AUCTIONS_ABI = [
 			},
 			{
 				"internalType": "uint256",
-				"name": "totalClaimedRandomBUSD",
+				"name": "totalClaimedRandomUSDT",
 				"type": "uint256"
 			}
 		],
@@ -999,7 +999,7 @@ export const DAILY_AUCTIONS_ABI = [
 				"type": "address"
 			}
 		],
-		"name": "randomBUSD",
+		"name": "randomUSDT",
 		"outputs": [
 			{
 				"internalType": "uint256",
@@ -1089,7 +1089,7 @@ export const DAILY_AUCTIONS_ABI = [
 	},
 	{
 		"inputs": [],
-		"name": "toSendToPairBusd",
+		"name": "toSendToPairUSDT",
 		"outputs": [
 			{
 				"internalType": "uint256",

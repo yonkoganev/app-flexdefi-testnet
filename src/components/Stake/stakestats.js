@@ -38,7 +38,7 @@ const StakeStats = ({ amount, days, irrevocable }) => {
     const { sharePrice } = handleGlobals();
 
     function fSharesUI() {
-        if (!bFLEXbalance || !amount || !days || !sharePrice) return null;
+        if (!amount || !days || !sharePrice) return null;
 
         // --- Time bonus (protocol logic) ---
         const y = Math.floor(days / 365);
@@ -52,7 +52,7 @@ const StakeStats = ({ amount, days, irrevocable }) => {
 
         // --- Final shares (with bonuses) ---
         const hasBFLEX = bFLEXbalance > 0;
-        let finalShares = amount / (hasBFLEX ? sharePrice * 0.25 : sharePrice);
+        let finalShares = amount / (hasBFLEX ? sharePrice * 0.20 : sharePrice);
         finalShares *= 1 + timeBonus;
 
         if (irrevocable) finalShares *= 1.25;

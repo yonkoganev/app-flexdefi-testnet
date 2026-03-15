@@ -13,7 +13,7 @@ const queryClient = new QueryClient();
 const metadata = {
   name: 'FLEX',
   description: 'High-Yield hybrid rewards',
-  url: 'https://localhost:3000', // use your domain in production
+  url: 'https://app.flexdefi.io', // use your domain in production
   icons: ['https://assets.reown.com/reown-profile-pic.png']
 };
 
@@ -21,8 +21,8 @@ const metadata = {
 export const modal = createAppKit({
   adapters: [wagmiAdapter],
   projectId,
-  networks: [bscTestnet],
-  defaultNetwork: bscTestnet,
+  networks: [bsc],
+  defaultNetwork: bsc,
   metadata,
   features: {
     analytics: false,

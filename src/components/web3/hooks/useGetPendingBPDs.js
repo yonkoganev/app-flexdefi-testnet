@@ -8,7 +8,7 @@ export function useGetPendingBPDs() {
   return useReadContract({
     address: flexContracts.auctions,
     abi: DAILY_AUCTIONS_ABI,
-    functionName: 'randomBUSD',
+    functionName: 'randomUSDT',
     args: [address],
     query: {
       enabled: !!address,

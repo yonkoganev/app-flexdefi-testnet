@@ -9,7 +9,7 @@ export function useClaimBPDs() {
     return await writeContractAsync({
       address: flexContracts.auctions,
       abi: DAILY_AUCTIONS_ABI,
-      functionName: 'claimBusdFromBPD'
+      functionName: 'claimUSDTFromBPD'
     });
   };
 
