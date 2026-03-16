@@ -56,7 +56,7 @@ const AuctionPanel = () => {
         }
         const floatVal = parseFloat(value);
         
-        if (isNaN(floatVal) || floatVal < 50) {
+        if (isNaN(floatVal)) {
             setAmount(value);
             setIsDisabled(true);
             setButtonText("USDT must be greater than 50");
