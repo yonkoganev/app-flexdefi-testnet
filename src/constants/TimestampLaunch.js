@@ -1,2 +1,2 @@
-export const launchTimestamp = 1773597600000;
-export const day_length = 86400;
+export const launchTimestamp = 1773658800;
+export const day_length = 600;
